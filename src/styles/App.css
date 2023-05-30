@@ -18,6 +18,7 @@
   --job-shadow: #ddd7d7;
   --job-shadow-hover: #666666;
   --form-error: #d31b14;
+  --scroll-down: #fff;
 }
 [data-theme = 'dark'] {
   --background: #202c33;
@@ -34,6 +35,7 @@
   --job-shadow: #192229;
   --job-shadow-hover: #11191f;
   --form-error: #d31b14;
+  --scroll-down: #fff;
 }
 html {
   font-size: 62.5%;
