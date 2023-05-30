@@ -58,6 +58,13 @@
     transform: translateY(50px);
   }
 }
+.header-button-scroll {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  display: grid;
+  place-items: center;
+}
 
 /* media */
 @media (max-width: 1115px) {
