@@ -1,0 +1,54 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 50px 130px 0 130px;
+  background: var(--background-contact);
+  /* background-image: url('../images/portada-header.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+  display: grid;
+  place-items: center;
+}
+.footer-container-title {
+  width: 100%;
+}
+.contact-icon {
+  margin-right: 10px;
+  font-size: 3.5rem;
+  color: var(--text-icon-hover);
+}
+.footer-container-content {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.footer-container-text {
+  margin: 40px 0;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  display: grid;
+  place-items: center;
+}
+
+/* media */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 50px 50px 0 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 40px 20px 0 20px;
+  }
+  .footer-container-title h2 {
+    font-size: 3rem;
+  }
+  .footer-container-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

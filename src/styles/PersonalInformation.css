@@ -1,0 +1,31 @@
+.personal-container {
+  font-size: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personal-container ul li {
+  width: 250px;
+  margin-bottom: 12px;
+  padding-bottom: 2px;
+  list-style: none;
+  border-bottom: 1px solid var(--circle-hover);
+}
+.personal-container ul li p {
+  margin-top: 3px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 731px) {
+  .personal-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal-container {
+    margin-top: 20px;
+  }
+}

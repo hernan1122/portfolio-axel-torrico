@@ -1,0 +1,193 @@
+.menu-container {
+  width: 100%;
+  height: 80px;
+  padding: 0 130px;
+  background-color: var(--background-contact);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 2px 2px 15px 0px var(--menu-shadow);
+}
+.menu-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+span {
+  font-weight: 700;
+  color: var(--text-icon-hover);
+}
+.menu-links .ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-links .ul li {
+  list-style: none;
+  position: relative;
+}
+.menu-links .ul li a {
+  margin: 0 10px;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.menu-links .ul li a:hover {
+  color: var(--text-icon-hover);
+}
+.menu-links .ul li a:hover::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--text-icon-hover);
+  position: absolute;
+  bottom: -4px;
+  left: 12px;
+}
+.menu-icon {
+  margin-right: 6px;
+  font-size: 22px;
+  color: var(--text-icon-hover);
+}
+
+/* hamburguer icon */
+.nav-icon-5{
+  width: 33px;
+  height: 23px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+.nav-icon-5 span{
+  background-color: var(--text-primary);
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 3px;
+  transition-duration: 500ms
+}
+.nav-icon-5 span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.nav-icon-5 span:nth-child(2){
+  top:10px;
+  left: 0px;
+  opacity:1;
+}
+.nav-icon-5 span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.nav-icon-5:not(.open):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.nav-icon-5.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 10px;
+}
+.nav-icon-5.open span:nth-child(2){
+  opacity:0;
+}
+.nav-icon-5.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+/* media */ 
+@media (max-width: 1000px) {
+  .menu-container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu-container {
+    padding: 0 50px;
+  }
+  .menu-links .ul {
+    width: 300px;
+    height: 100vh;
+    padding: 25px 0 0 15px;
+    position: absolute;
+    top: 79px;
+    right: 0;
+    background-color: var(--menu-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    transform: translateX(300px);
+    transition: 0.3s ease all;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%); */
+  }
+  .menu-links .ul.open {
+    transform: translateX(1px);
+  }
+  .menu-links .ul li a {
+    font-size: 1.7rem;
+  }
+  .menu-links .ul li a:hover::after {
+    width: 60px;
+  }
+  .menu-links .ul li a:hover::after {
+    left: 2px;
+  }
+  .menu-icon {
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  /* #aboutMe {
+    width: 112px;
+    position: absolute;
+    left: 5px;
+  }
+  #myJobs {
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+  }
+  #contactMe {
+    width: 125px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+  }
+  #cv {
+    width: 97px;
+    position: absolute;
+    top: 75px;
+    left: 35px;
+  } */
+  .nav-icon-5 {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 0 20px;
+  }
+  .menu-links .ul {
+    width: 250px;
+    transform: translateX(250px);
+  }
+}

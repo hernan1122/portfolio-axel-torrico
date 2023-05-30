@@ -1,0 +1,79 @@
+.Form {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.Form-content {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.Form-content label {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+.Form-content .error-label {
+  color: var(--form-error);
+}
+.Form-content .required {
+  font-size: 1.4rem;
+  color: var(--form-error);
+}
+.Form-content .input,
+.Form-content .input-text {
+  height: 40px;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-primary);
+  border: none;
+  border-bottom: 1px solid var(--text-icon-hover);
+  outline: none;
+  z-index: 2;
+}
+.Form-content .error-input {
+  border-bottom: 1px solid var(--form-error);
+}
+.Form-content .input-text {
+  height: 70px;
+  padding-top: 10px;
+}
+.Form-content .input:focus,
+.Form-content .input-text:focus {
+  border-bottom: 2px solid var(--text-icon-hover);
+}
+.Form-content p {
+  padding-top: 4px;
+  font-size: 1.3rem;
+  color: var(--form-error);
+}
+.Form-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 0;
+  background: var(--text-icon-hover);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  transition: 300ms ease-in-out all;
+  z-index: 2;
+  cursor: pointer;
+}
+.Form-button:hover {
+  transform: scale(0.95, 0.95);
+}
+
+/* media */
+@media (max-width: 1000px) {
+  .Form {
+  width: 100%;
+}
+}
