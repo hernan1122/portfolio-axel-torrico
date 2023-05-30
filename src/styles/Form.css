@@ -70,10 +70,15 @@
 .Form-button:hover {
   transform: scale(0.95, 0.95);
 }
+.my-swal-title {
+  font-size: 1.8rem;
+  color: var(--text-icon-hover);
+  border-bottom: none;
+}
 
 /* media */
 @media (max-width: 1000px) {
   .Form {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
