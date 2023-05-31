@@ -1,6 +1,6 @@
 import { Menu } from './Menu'
 import headerImage from '../images/fotoperfil.jpg'
-import ScrollDown from './ScrollDown';
+/* import ScrollDown from './ScrollDown'; */
 import '../styles/Header.css'
 
 import AOS from 'aos';
@@ -25,7 +25,7 @@ export function Header() {
           <img src={headerImage} alt="" />
         </figure>
       </section>
-      <div className="header-button-scroll">{<ScrollDown />}</div>
+      {/* <div className="header-button-scroll">{<ScrollDown />}</div> */}
     </header>
   )
 }
