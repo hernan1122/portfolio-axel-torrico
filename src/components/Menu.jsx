@@ -15,7 +15,7 @@ export function Menu() {
     setIsOpen(!isOpen)
   }
 
-  let menuRef = useRef()
+  /* let menuRef = useRef()
 
   useEffect(() => {
     const handler = (e) => {
@@ -25,13 +25,13 @@ export function Menu() {
     }
 
     document.addEventListener('mousedown', handler)
-  }, [])
+  }, []) */
 
   return (
     <nav className='menu-container'>
       <a className='menu-title' href='#home'>Portfolio | <span>Axel Torrico</span></a>
-      <div className='menu-links' ref={menuRef}>
-        <ul className={`ul ${isOpen && 'open'}`}>
+      <div className='menu-links' /* ref={menuRef} */>
+        <ul className={`ul ${isOpen ? 'open' : ''}`}>
           <li>
             <a id='aboutMe' href="#about" onClick={handleClick}>
               <BsFillPersonFill className='menu-icon'/> About me
