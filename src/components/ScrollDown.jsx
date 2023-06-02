@@ -21,7 +21,7 @@ function ScrollDown() {
       }
     >
       <div className="scroll-button"></div>
-      <h6>Scroll</h6>
+      <h6 className="scroll-button-text">Scroll</h6>
     </div>
   );
 }

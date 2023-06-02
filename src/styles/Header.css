@@ -81,6 +81,7 @@
     width: 330px;
   }
 }
+
 @media (max-width: 1000px) {
   .header-container-content {
     padding: 0 50px;
@@ -108,6 +109,9 @@
   }
   .header-container-content-img img {
     width: 300px;
+  }
+  .header-button-scroll {
+    bottom: 42px;
   }
 }
 
