@@ -26,8 +26,8 @@ export function Header() {
         </figure>
       </section>
       <div className="header-button-scroll">
-          <ScrollDown />
-        </div>
+        <ScrollDown />
+      </div>
     </header>
   )
 }
