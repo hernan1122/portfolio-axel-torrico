@@ -5,11 +5,7 @@ function ScrollDown() {
   const [scroll, setScroll] = useState(false);
 
   const fadeScroll = () => {
-    if (window.scrollY >= 150) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
+    window.scrollY >= 150 ? setScroll(true) : setScroll(false);
   };
 
   window.addEventListener("scroll", fadeScroll);
