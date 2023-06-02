@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/ScrollDown.css";
 
-export default function ScrollDown() {
+function ScrollDown() {
   const [scroll, setScroll] = useState(false);
 
   const fadeScroll = () => {
@@ -25,3 +25,5 @@ export default function ScrollDown() {
     </div>
   );
 }
+
+export default ScrollDown

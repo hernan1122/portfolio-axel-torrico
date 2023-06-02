@@ -4,9 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 .scroll-inactive {
-  animation: fade-out 0.5s ease-out both;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.scroll-inactive:hover {
+  opacity: 1;
 }
 .button-container h6 {
   color: var(--scroll-down);
@@ -41,4 +47,4 @@
     transform: translateY(5px);
     opacity: 0;
   }
-} ;
+}
