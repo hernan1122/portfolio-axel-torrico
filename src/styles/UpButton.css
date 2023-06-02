@@ -1,0 +1,16 @@
+.UpButton {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--text-icon-hover);
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 100px;
+}
+.UpButton-icon {
+  font-size: 25px;
+  color: var(--text-primary);
+}
