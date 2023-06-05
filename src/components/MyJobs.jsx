@@ -1,5 +1,5 @@
 import React from 'react';
-import { WorkCard } from './workCard';
+import { JobCard } from './JobCard';
 import '../styles/MyJobs.css'
 
 //images
@@ -112,7 +112,7 @@ export function MyJobs() {
         {
           jobs.map(({ image, title, info, description, urlGit, urlApp }) => {
             return (
-              <WorkCard
+              <JobCard
                 key={title}
                 image={image}
                 title={title}
@@ -121,7 +121,7 @@ export function MyJobs() {
                 urlGit={urlGit}
                 urlApp={urlApp}
               >
-              </WorkCard>
+              </JobCard>
             )
           })
         }
