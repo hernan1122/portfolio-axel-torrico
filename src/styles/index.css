@@ -10,12 +10,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #086594;
   border-radius: 10px;
 }
-.Jobs {
+/* .Jobs {
   padding: 30px 130px 50px 130px;
   background-color: var(--background);
   display: grid;
-  /* gap: 30px; */
-  /* grid-template-columns: repeat(auto-fill, 340px); */
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   place-items: center;
 }
@@ -37,8 +35,8 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px;
   font-size: 3.5rem;
   color: var(--text-icon-hover);
-}
-.portfolio-repository {
+} */
+/* .portfolio-repository {
   width: 260px;
   padding: 20px 10px;
   font-size: 2rem;
@@ -76,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio-repository i {
   font-size: 35px;
   color: var(--icon);
-}
+} */
 
 /* media */
 @media (max-width: 1000px) {
