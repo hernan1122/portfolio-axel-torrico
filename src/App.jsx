@@ -3,7 +3,7 @@ import { Header } from "./components/Header"
 import { About } from "./components/About"
 import { MyJobs } from "./components/MyJobs"
 import { Contact } from "./components/Contact"
-import { UpButton } from "./components/UpButton"
+/* import { UpButton } from "./components/UpButton" */
 import './styles/App.css'
 
 //icons
@@ -44,7 +44,7 @@ function App() {
       <About />
       <MyJobs />
       <Contact />
-      <UpButton />
+      {/* <UpButton /> */}
     </div>
   )
 }
