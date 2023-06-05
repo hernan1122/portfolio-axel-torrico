@@ -1,5 +1,6 @@
 import React from 'react';
 import { JobCard } from './JobCard';
+import { Projects } from './Projects';
 import '../styles/MyJobs.css'
 
 //images
@@ -107,6 +108,9 @@ export function MyJobs() {
         >
           <i><AiOutlineGithub /></i> Portfolio repository
         </a>
+      </div>
+      <div className="MyJobs-projects">
+        <Projects />
       </div>
       <div className='MyJobs-cards'>
         {
