@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <div div data-theme={theme}>
+    <div data-theme={theme}>
       <div
         id='theme'
         className='theme-toggle'
