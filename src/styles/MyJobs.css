@@ -70,7 +70,7 @@
 /* media */
 @media (max-width: 1000px) {
   .MyJobs {
-    padding: 30px 50px 50px 50px;
+    padding: 50px;
   }
   .MyJobs-cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -95,7 +95,7 @@
 
 @media (max-width: 480px) {
   .MyJobs {
-    padding: 30px 20px 50px 20px;
+    padding: 50px 20px 50px 20px;
   }
   .MyJobs-cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

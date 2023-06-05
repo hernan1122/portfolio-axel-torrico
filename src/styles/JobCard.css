@@ -92,7 +92,7 @@
     height: 260px;
   }
   .JobCard-description-content-text {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }

@@ -12,6 +12,7 @@
   animation: blink 2.5s ease-in-out infinite;
   opacity: 1;
   transition: opacity 0.5s ease-out;
+  z-index: 2;
 }
 .UpButton-inactive {
   opacity: 0;
@@ -41,6 +42,6 @@
 @media (max-width: 768px) {
   .UpButton {
     bottom: 25px;
-  right: 25px;
+    right: 25px;
   }
 }
