@@ -12,16 +12,6 @@
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   place-items: center;
 }
-/* .container-title-jobs {
-  width: 100%;
-  padding: 0 130px;
-  background-color: var(--background);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-} */
 .MyJobs-title {
   width: 100%;
   padding-top: 50px;
