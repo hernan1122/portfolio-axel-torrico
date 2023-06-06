@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Menu } from './Menu';
 import { JobCard } from './JobCard';
-import { Projects } from './Projects';
+import { UpButton } from './UpButton';
 import '../styles/MyJobs.css'
 
 //images
@@ -15,8 +16,10 @@ import gameTateti from '../images/ta-te-ti.png'
 import interactiveGiveaway from '../images/sorteo-interactivo.png'
 
 //icons
-import { AiOutlineGithub } from 'react-icons/ai'
+import { MdOutlineWbSunny } from 'react-icons/md'
+import { BiMoon } from 'react-icons/bi'
 import { GoTools } from 'react-icons/go'
+import { Contact } from './Contact';
 
 const jobs = [
   {
@@ -94,42 +97,54 @@ const jobs = [
 ]
 
 export function MyJobs() {
+  const [theme, setTheme] = useState('theme' ? 'dark' : 'light')
+  const [iconTheme, setIconTheme] = useState(true)
+
+  const changeIconTheme = () => {
+    setIconTheme(!iconTheme)
+  }
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    changeIconTheme()
+  }
+
   return (
-    <div className='MyJobs'>
-      <h2 className="MyJobs-title">
-        <GoTools className='MyJobs-icon'/> My Jobs
-      </h2>
-      <div className='MyJobs-container-btn'>
-        <a
-          className='MyJobs-portfolio-repository'
-          href='https://github.com/hernan1122/portfolio-axel-torrico'
-          target="_blank"
-          data-aos="zoom-in"
-        >
-          <i><AiOutlineGithub /></i> Portfolio repository
-        </a>
+    <>
+      <div
+        id='theme'
+        className='theme-toggle'
+        onClick={switchTheme}
+      >
+        {iconTheme ? <BiMoon className='icon-theme' /> : <MdOutlineWbSunny className='icon-theme' />}
       </div>
-      <div className="MyJobs-projects">
-        <Projects />
+      <Menu />
+      <div className='MyJobs'>
+        <h2 className="MyJobs-title">
+          <GoTools className='MyJobs-icon'/> My Jobs
+        </h2>
+        <div className='MyJobs-cards'>
+          {
+            jobs.map(({ image, title, info, description, urlGit, urlApp }) => {
+              return (
+                <JobCard
+                  key={title}
+                  image={image}
+                  title={title}
+                  info={info}
+                  description={description}
+                  urlGit={urlGit}
+                  urlApp={urlApp}
+                >
+                </JobCard>
+              )
+            })
+          }
+        </div>
       </div>
-      <div className='MyJobs-cards'>
-        {
-          jobs.map(({ image, title, info, description, urlGit, urlApp }) => {
-            return (
-              <JobCard
-                key={title}
-                image={image}
-                title={title}
-                info={info}
-                description={description}
-                urlGit={urlGit}
-                urlApp={urlApp}
-              >
-              </JobCard>
-            )
-          })
-        }
-      </div>
-    </div>
+      <Contact />
+      <UpButton />
+    </>
   );
 }
