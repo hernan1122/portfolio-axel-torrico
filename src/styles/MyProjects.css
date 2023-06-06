@@ -7,19 +7,28 @@
   width: 100%;
   padding-top: 50px;
 }
+.MyProjects-container-projects {
+  width: 100%;
+  margin-top: 50px;
+}
 .MyProjects-icon {
   margin-right: 10px;
   font-size: 3.5rem;
   color: var(--text-icon-hover);
 }
+.MyProjects-container-button {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
 .MyProjects-container-btn {
   width: 100%;
-  margin: 50px 0;
+  margin: 30px 0;
   display: grid;
   place-items: center;
 }
 .MyProjects-portfolio-repository {
-  width: 260px;
+  width: 100%;
   padding: 20px 10px;
   font-size: 2rem;
   display: flex;
@@ -61,31 +70,35 @@
 /* media */
 @media (max-width: 1000px) {
   .MyProjects {
-    padding: 50px;
+    padding: 50px 50px 0 50px;
   }
   .MyProjects-title {
     padding: 0 50px;
   }
   .MyProjects-portfolio-repository {
     width: 100%;
+    height: 145px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .MyProjects {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 0 20px;
   }
   .MyProjects-title {
-    padding: 0 20px;
+    padding: 0 20px 10px 20px;
     font-size: 3rem;
   }
   .MyProjects-portfolio-repository {
     width: 100%;
+    height: 120px;
     font-size: 1.8rem;
     flex-direction: column;
+    text-align: center;
   }
 }
