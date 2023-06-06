@@ -1,45 +1,12 @@
 .Projects {
   margin-bottom: 50px;
   padding: 25px;
-  background: var(--circle);
+  background: var(--background-contact);
   display: flex;
   gap: 20px;
   border-radius: 10px;
   transition: all 1s ease;
   position: relative;
-  box-shadow: 0 0 20px var(--job-shadow);
-}
-.Projects:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-}
-.Projects:hover:before {
-  animation: animate 1s linear forwards;
-}
-.Projects:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-}
-.Projects:hover:after {
-  animation: animate2 1s linear forwards;
 }
 .Projects-container h3 {
   font-size: 2.5rem;
@@ -53,7 +20,7 @@
 }
 .Projects-video {
   width: 100%;
-  margin-top: 13px;
+  margin-top: 10px;
   border-radius: 10px;
 }
 .Projects-container-img {
@@ -67,56 +34,70 @@
   height: auto;
   border-radius: 10px;
 }
+.Projects-container-btn {
+  width: auto;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--text-icon-hover);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--text-primary);
+  border: none;
+  border-radius: 6px;
+  transition: 300ms ease-in-out all;
+}
+.Projects-container-btn:hover {
+  transform: scale(0.95, 0.95);
+}
 
-@keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: var(--border-projects);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: var(--border-projects);
-    border-right-color: var(--border-projects);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: var(--border-projects);
-    border-right-color: var(--border-projects);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+/* media */
+@media (max-width: 1000px) {
+  .Projects-container-img img {
+    width: 200px;
   }
 }
-@keyframes animate2 {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: var(--border-projects);
+
+@media (max-width: 840px) {
+  .Projects {
+    flex-direction: column;
   }
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--border-projects);
-    border-left-color: var(--border-projects);
+  .Projects-container-img {
+    display: none;
   }
-  100% {
+  .Projects-container-btn {
     width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: var(--border-projects);
-    border-left-color: var(--border-projects);
+    height: 50px;
+    position: static;
+    background: var(--text-icon-hover);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-primary);
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 6px;
+    transition: 300ms ease-in-out all;
+    cursor: pointer;
+  }
+  .Projects-container-btn:hover {
+    transform: scale(0.95, 0.95);
+  }
+}
+
+@media (max-width: 480px) {
+  .Projects-container h3 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Projects-container span {
+    font-size: 1.5rem;
+  }
+  .Projects-container p {
+    font-size: 1.5rem;
   }
 }
