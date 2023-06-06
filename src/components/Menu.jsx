@@ -4,6 +4,7 @@ import cv from '../downloads/cv_axel_torrico.pdf'
 import '../styles/Menu.css'
 
 //icons
+import { AiFillHome } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { GoTools } from 'react-icons/go'
 import { BsFileCodeFill } from 'react-icons/bs'
@@ -34,6 +35,11 @@ export function Menu() {
       <a className='menu-title' href='#home'>Portfolio | <span>Axel Torrico</span></a>
       <div className='menu-links' /* ref={menuRef} */>
         <ul className={`ul ${isOpen ? 'open' : ''}`}>
+          <li>
+            <Link to={'/'} onClick={handleClick}>
+              <AiFillHome className='menu-icon'/> Home
+            </Link>
+          </li>
           <li>
             <a id='aboutMe' href="#about" onClick={handleClick}>
               <BsFillPersonFill className='menu-icon'/> About me
