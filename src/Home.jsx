@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Header } from "./components/Header"
 import { About } from "./components/About"
 import { MyJobs } from "./components/MyJobs"
+import { MyProjects } from './components/MyProjects'
 import { Contact } from "./components/Contact"
 import { UpButton } from "./components/UpButton"
 import './styles/App.css'
@@ -17,7 +18,7 @@ AOS.init({
   once: true,
 });
 
-function App() {
+export function Home() {
   const [theme, setTheme] = useState('theme' ? 'dark' : 'light')
   const [iconTheme, setIconTheme] = useState(true)
 
@@ -42,11 +43,10 @@ function App() {
       </div>
       <Header />
       <About />
-      <MyJobs />
+      <MyProjects />
+      {/* <MyJobs /> */}
       <Contact />
       <UpButton />
     </div>
   )
 }
-
-export default App
