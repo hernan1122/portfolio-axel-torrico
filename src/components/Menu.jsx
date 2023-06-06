@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import cv from '../downloads/cv_axel_torrico.pdf'
 import '../styles/Menu.css'
 
 //icons
 import { BsFillPersonFill } from 'react-icons/bs'
 import { GoTools } from 'react-icons/go'
+import { BsFileCodeFill } from 'react-icons/bs'
 import { AiFillPhone } from 'react-icons/ai'
 import { BsFilePersonFill } from 'react-icons/bs'
 
@@ -38,8 +40,13 @@ export function Menu() {
             </a>
           </li>
           <li>
-            <a id='myJobs' href="#jobs" onClick={handleClick}>
+            <Link to={'/jobs'} onClick={handleClick}>
               <GoTools className='menu-icon' /> My Jobs
+            </Link>
+          </li>
+          <li>
+            <a id='myProjects' href="#myprojects" onClick={handleClick}>
+              <BsFileCodeFill className='menu-icon' /> My Projects
             </a>
           </li>
           <li>
