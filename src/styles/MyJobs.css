@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--circle);
+  background-color: var(--background-contact);
   color: var(--text-primary);
   border-radius: 10px;
   cursor: pointer;
@@ -106,7 +106,7 @@
     font-size: 3rem;
   }
   .MyJobs-portfolio-repository {
-    width: 260px;
+    width: 100%;
     font-size: 1.8rem;
     flex-direction: column;
   }
