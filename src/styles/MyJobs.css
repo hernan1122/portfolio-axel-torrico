@@ -96,7 +96,7 @@
 
 @media (max-width: 480px) {
   .MyJobs {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 0 20px;
   }
   .MyJobs-cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
