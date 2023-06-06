@@ -111,7 +111,7 @@ export function MyJobs() {
   }
 
   return (
-    <>
+    <div data-theme={theme}>
       <div
         id='theme'
         className='theme-toggle'
@@ -145,6 +145,6 @@ export function MyJobs() {
       </div>
       <Contact />
       <UpButton />
-    </>
+    </div>
   );
 }
