@@ -17,13 +17,15 @@ export function Projects() {
   return (
     <div className='Projects'>
       <div className='Projects-container'>
-        <h3>Cantera Music <span>Explora, disfruta y comparte</span></h3>
-        <p>
-          Una aplicación de música que ofrece a los usuarios una experiencia de audio integral y personalizada. Con su capacidad para reproducir música, podcasts y audiolibros, así como para agregar archivos de audio personalizados, la aplicación se convierte en una plataforma versátil para satisfacer las necesidades de escucha de los usuarios.
-        </p>
-        <p>
-          Como miembro del equipo de frontend, fui responsable de la implementación de la interfaz de usuario utilizando React, la integración con API, la estilización de los componentes y la implementación de la lógica de interacción.
-        </p>
+        <div>
+          <h3>Cantera Music <span>Explore, enjoy and share</span></h3>
+          <p>
+            A music application that offers users a comprehensive and personalized audio experience. With its ability to play music, podcasts, and audiobooks, as well as add custom audio files, the app becomes a versatile platform to meet users' listening needs.
+          </p>
+          <p>
+            As a member of the frontend team, I was responsible for UI implementation using React, API integration, component styling, and interaction logic implementation.
+          </p>
+        </div>
         <video
           className='Projects-video'
           poster={videoPoster}

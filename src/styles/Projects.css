@@ -1,4 +1,5 @@
 .Projects {
+  height: auto;
   margin-bottom: 50px;
   padding: 25px;
   background: var(--background-contact);
@@ -7,6 +8,11 @@
   border-radius: 10px;
   transition: all 1s ease;
   position: relative;
+}
+.Projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .Projects-container h3 {
   font-size: 2.5rem;
@@ -30,13 +36,13 @@
   gap: 15px;
 }
 .Projects-container-img img {
-  width: 270px;
+  width: 260px;
   height: auto;
   border-radius: 10px;
 }
 .Projects-container-btn {
   width: auto;
-  padding: 10px;
+  padding: 10px 20px;
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -44,7 +50,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
-  color: var(--text-primary);
+  color: var(--scroll-down);
   border: none;
   border-radius: 6px;
   transition: 300ms ease-in-out all;
@@ -75,7 +81,7 @@
     font-size: 1.6rem;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
-    color: var(--text-primary);
+    color: var(--scroll-down);
     display: grid;
     place-items: center;
     border: none;
