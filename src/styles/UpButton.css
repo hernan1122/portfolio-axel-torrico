@@ -23,7 +23,7 @@
 }
 .UpButton-icon {
   font-size: 25px;
-  color: var(--text-primary);
+  color: var(--scroll-down);
 }
 
 @keyframes blink {
@@ -31,7 +31,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
