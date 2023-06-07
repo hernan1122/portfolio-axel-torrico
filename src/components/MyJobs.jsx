@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Menu } from './Menu';
 import { JobCard } from './JobCard';
 import { UpButton } from './UpButton';
 import '../styles/MyJobs.css'
@@ -111,19 +110,8 @@ export function MyJobs() {
   }
 
   return (
-    <div data-theme={theme}>
-      <div
-        id='theme'
-        className='theme-toggle'
-        onClick={switchTheme}
-      >
-        {iconTheme ? <BiMoon className='icon-theme' /> : <MdOutlineWbSunny className='icon-theme' />}
-      </div>
-      <Menu />
+    <div>
       <div className='MyJobs'>
-        <h2 className="MyJobs-title">
-          <GoTools className='MyJobs-icon'/> My Jobs
-        </h2>
         <div className='MyJobs-cards'>
           {
             jobs.map(({ image, title, info, description, urlGit, urlApp }) => {
@@ -143,8 +131,6 @@ export function MyJobs() {
           }
         </div>
       </div>
-      <Contact />
-      <UpButton />
     </div>
   );
 }

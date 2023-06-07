@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import { Projects } from './Projects';
+import { MyJobs } from './MyJobs';
 import '../styles/MyProjects.css'
 
 //icons
@@ -9,6 +9,12 @@ import { BsFileCodeFill } from 'react-icons/bs'
 import { GoTools } from 'react-icons/go'
 
 export function MyProjects() {
+  const [seeJobs, setSeeJobs] = useState(false)
+
+  const handleClick = () => {
+    setSeeJobs(!seeJobs)
+  }
+
   return (
     <div id="myprojects" className='MyProjects'>
       <h2 className="MyProjects-title">
@@ -20,24 +26,26 @@ export function MyProjects() {
       <div className='MyProjects-container-button'>
         <div className='MyProjects-container-btn'>
           <a
-            className='MyProjects-portfolio-repository'
+            className='MyProjects-repository-jobs'
             href='https://github.com/hernan1122/portfolio-axel-torrico'
             target="_blank"
             data-aos="zoom-in"
           >
-            <i><AiOutlineGithub /></i> Portfolio Repository
+            <i><AiOutlineGithub /></i> Portfolio repository
           </a>
         </div>
         <div className='MyProjects-container-btn'>
-          <Link
-            to={'/jobs'}
-            className='MyProjects-portfolio-repository'
+          <button
+            className='MyProjects-repository-jobs'
+            onClick={handleClick}
             data-aos="zoom-in"
           >
-            <i><GoTools /></i> More Jobs
-          </Link>
+            <i><GoTools /></i>
+            {seeJobs ? 'See less jobs' : 'See more jobs'}
+          </button>
         </div>
       </div>
+      {seeJobs ? <MyJobs /> : null}
     </div>
   );
 }

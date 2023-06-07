@@ -1,6 +1,5 @@
 .MyJobs {
   width: 100%;
-  padding: 80px 130px 0 130px;
   background: var(--background);
 }
 .MyJobs-cards {
@@ -70,9 +69,6 @@
 
 /* media */
 @media (max-width: 1000px) {
-  .MyJobs {
-    padding: 50px;
-  }
   .MyJobs-cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
@@ -95,9 +91,6 @@
 }
 
 @media (max-width: 480px) {
-  .MyJobs {
-    padding: 50px 20px 0 20px;
-  }
   .MyJobs-cards {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 10px;
