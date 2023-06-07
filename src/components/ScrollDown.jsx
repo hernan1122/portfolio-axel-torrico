@@ -1,7 +1,9 @@
 import { useState } from "react";
+import AOS from 'aos';
 import "../styles/ScrollDown.css";
 
 function ScrollDown() {
+  AOS.init()
   const [scroll, setScroll] = useState(false);
 
   const fadeScroll = () => {
@@ -12,6 +14,7 @@ function ScrollDown() {
 
   return (
     <div
+      data-aos="zoom-in"
       className={
         scroll ? "button-container scroll-inactive" : "button-container "
       }

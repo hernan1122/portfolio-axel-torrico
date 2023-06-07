@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AOS from 'aos';
 import '../styles/Projects.css'
 
 //images and video
@@ -7,7 +8,9 @@ import search from '../images/cantera-music-search.png'
 import videoPoster from '../images/cantera-music-initial.png'
 import video from '../video/video-cantera-music.mp4'
 
+
 export function Projects() {
+  AOS.init()
   const [see, setSee] = useState(false)
 
   const handleClick = () => {
@@ -15,7 +18,7 @@ export function Projects() {
   }
 
   return (
-    <div className='Projects'>
+    <div className='Projects' data-aos="zoom-in">
       <div className='Projects-container'>
         <div>
           <h3>Cantera Music <span>Explore, enjoy and share</span></h3>

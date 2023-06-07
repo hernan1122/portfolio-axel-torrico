@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AOS from 'aos';
 import { Projects } from './Projects';
 import { MyJobs } from './MyJobs';
 import '../styles/MyProjects.css'
@@ -9,6 +10,7 @@ import { BsFileCodeFill } from 'react-icons/bs'
 import { GoTools } from 'react-icons/go'
 
 export function MyProjects() {
+  AOS.init()
   const [seeJobs, setSeeJobs] = useState(false)
 
   const handleClick = () => {

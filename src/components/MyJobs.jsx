@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { JobCard } from './JobCard';
-import { UpButton } from './UpButton';
 import '../styles/MyJobs.css'
 
 //images
@@ -13,12 +12,6 @@ import picturesDogs from '../images/fotos de perros.png'
 import gameZombi from '../images/game-zombi.png'
 import gameTateti from '../images/ta-te-ti.png'
 import interactiveGiveaway from '../images/sorteo-interactivo.png'
-
-//icons
-import { MdOutlineWbSunny } from 'react-icons/md'
-import { BiMoon } from 'react-icons/bi'
-import { GoTools } from 'react-icons/go'
-import { Contact } from './Contact';
 
 const jobs = [
   {
@@ -96,19 +89,6 @@ const jobs = [
 ]
 
 export function MyJobs() {
-  const [theme, setTheme] = useState('theme' ? 'dark' : 'light')
-  const [iconTheme, setIconTheme] = useState(true)
-
-  const changeIconTheme = () => {
-    setIconTheme(!iconTheme)
-  }
-
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    changeIconTheme()
-  }
-
   return (
     <div>
       <div className='MyJobs'>

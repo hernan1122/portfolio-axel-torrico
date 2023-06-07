@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AOS from 'aos';
 import { Header } from "./components/Header"
 import { About } from "./components/About"
 import { MyProjects } from './components/MyProjects'
@@ -10,14 +11,8 @@ import './styles/App.css'
 import { MdOutlineWbSunny } from 'react-icons/md'
 import { BiMoon } from 'react-icons/bi'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init({
-  duration: 300,
-  once: true,
-});
-
 export function Home() {
+  AOS.init()
   const [theme, setTheme] = useState('theme' ? 'dark' : 'light')
   const [iconTheme, setIconTheme] = useState(true)
 

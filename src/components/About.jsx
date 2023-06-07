@@ -1,3 +1,4 @@
+import AOS from 'aos';
 import { PersonalInformation } from "./PersonalInformation"
 import { Skills } from "./Skills"
 import { MyInteresets } from "./MyInteresets"
@@ -6,13 +7,9 @@ import '../styles/About.css'
 //icons
 import { BsFillPersonFill } from 'react-icons/bs'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init({
-  duration: 400,
-});
-
 export function About() {
+  AOS.init()
+
   return (
     <div id="about" className="about-container" >
       <div className="about-container-title">

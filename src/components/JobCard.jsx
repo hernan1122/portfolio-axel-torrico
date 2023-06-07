@@ -1,4 +1,5 @@
 import React from 'react';
+import AOS from 'aos';
 import '../styles/JobCard.css'
 
 //icons
@@ -6,8 +7,10 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import { RiEyeLine } from 'react-icons/ri'
 
 export function JobCard({ image, title, info, description, urlGit, urlApp }) {
+  AOS.init()
+
   return (
-    <div className='JobCard'>
+    <div className='JobCard' data-aos="zoom-in">
       <article id="jobs" className="JobCard-container">
         <img className="JobCard-image" src={image} alt={image} />
         <div className="JobCard-description">

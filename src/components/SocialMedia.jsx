@@ -9,7 +9,7 @@ export function SocialMedia() {
   return (
     <section className="socialMedia-container">
       <a
-      className="linkedin"
+        className="linkedin"
         href="https://www.linkedin.com/in/axel-hern%C3%A1n-torrico-98310a252/"
         target="blank"
       >
@@ -18,7 +18,7 @@ export function SocialMedia() {
         </i>
       </a>
       <a
-      className="whatsapp"
+        className="whatsapp"
         href="https://api.whatsapp.com/send?phone=+5492613400738&text=Hi Axel, I come from your portfolio"
         target="blank"
       >
@@ -27,7 +27,7 @@ export function SocialMedia() {
         </i>
       </a>
       <a
-      className="github"
+        className="github"
         href="https://github.com/hernan1122"
         target="blank"
       >
