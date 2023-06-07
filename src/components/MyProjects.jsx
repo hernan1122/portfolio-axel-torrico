@@ -41,7 +41,7 @@ export function MyProjects() {
             data-aos="zoom-in"
           >
             <i><GoTools /></i>
-            {seeJobs ? 'See less jobs' : 'See more jobs'}
+            {seeJobs ? 'See less' : 'See more'}
           </button>
         </div>
       </div>
