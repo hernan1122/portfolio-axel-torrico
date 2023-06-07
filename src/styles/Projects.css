@@ -59,12 +59,6 @@
 }
 
 /* media */
-@media (max-width: 1400px) {
-  .Projects-container-img img {
-    width: 200px;
-  }
-}
-
 @media (max-width: 1300px) {
   .Projects {
     flex-direction: column;
