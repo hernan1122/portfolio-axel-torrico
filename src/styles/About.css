@@ -27,13 +27,16 @@
 }
 
 /* media */
-@media (max-width: 1000px) {
-  .about-container {
-    padding: 50px 50px 0 50px;
-  }
+@media (max-width: 1300px) {
   .about-container .about-container-content {
     margin-top: 30px;
     gap: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    padding: 50px 50px 0 50px;
   }
 }
 
