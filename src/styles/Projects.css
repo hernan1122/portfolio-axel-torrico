@@ -53,9 +53,21 @@
   border: none;
   border-radius: 6px;
   transition: 300ms ease-in-out all;
+  z-index: 2;
 }
 .Projects-container-btn:hover {
   transform: scale(0.95, 0.95);
+}
+.Projects-container-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.849);
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
 }
 
 /* media */

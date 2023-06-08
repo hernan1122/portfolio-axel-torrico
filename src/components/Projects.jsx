@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
+import { ProjectsSlider } from './ProjectsSlider';
 import '../styles/Projects.css'
 
 //images and video
@@ -11,10 +12,10 @@ import video from '../video/video-cantera-music.mp4'
 
 export function Projects() {
   AOS.init()
-  const [see, setSee] = useState(false)
+  const [seeImagen, setSeeImagen] = useState(false)
 
   const handleClick = () => {
-    setSee(true)
+    setSeeImagen(!seeImagen)
   }
 
   return (
@@ -42,7 +43,14 @@ export function Projects() {
         <img src={home} alt={home} />
         <img src={search} alt={search} />
       </div>
-      <button className='Projects-container-btn'>See images</button>
+      <button className='Projects-container-btn' onClick={handleClick}>
+        {seeImagen ? 'Back' : 'See images'}
+      </button>
+      {seeImagen &&
+        <div className='Projects-container-slider' >
+          <ProjectsSlider />
+        </div>
+      }
     </div>
   );
 }
