@@ -111,4 +111,7 @@
   .Projects-container p {
     font-size: 1.5rem;
   }
+  .Projects-container-slider {
+    background: rgba(0, 0, 0, 0.644);
+  }
 }
