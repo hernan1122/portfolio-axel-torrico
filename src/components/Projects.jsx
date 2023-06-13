@@ -43,6 +43,13 @@ export function Projects() {
         <img src={home} alt={home} />
         <img src={search} alt={search} />
       </div>
+      <a
+        href="https://cantera-music.vercel.app/"
+        target="_blank"
+        className='Projects-container-btn-see'
+      >
+        See App
+      </a>
       <button className='Projects-container-btn' onClick={handleClick}>
         {seeImagen ? 'Back' : 'See images'}
       </button>
