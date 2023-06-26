@@ -1,6 +1,5 @@
 //images
 import todoList from '../images/todo-list.png'
-import moch from '../images/moch-movies.png'
 import criptar from '../images/criptar.png'
 import batatabit from '../images/Batatabit.png'
 import chronometer from '../images/my-chronometer.png'
