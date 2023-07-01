@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
-import { Projects } from './Projects';
+/* import { Projects } from './Projects'; */
 import { MyJobs } from './MyJobs';
+import { ProjectsCantera } from './ProjectsCantera';
+import { ProjectsMoch } from './ProjectsMoch';
 import '../styles/MyProjects.css'
 
 //icons
@@ -23,7 +25,9 @@ export function MyProjects() {
         <BsFileCodeFill className='MyProjects-icon'/> My Projects
       </h2>
       <div className='MyProjects-container-projects'>
-        <Projects />
+        {/* <Projects /> */}
+        <ProjectsCantera />
+        <ProjectsMoch />
       </div>
       <div className='MyProjects-container-button'>
         <div className='MyProjects-container-btn'>
