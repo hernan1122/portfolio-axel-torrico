@@ -2,18 +2,18 @@
   width: 280px;
   height: auto;
   position: fixed;
-  bottom: 35px;
+  bottom: 15px;
   left: calc(50% - 150px);
   z-index: 11;
 }
 .ProjectsSlider-container {
-  width: 280px;
+  width: 270px;
   height: auto;
   position: fixed;
   left: calc(50% - 125px);
 }
 .ProjectsSlider img {
-  width: 280px;
+  width: 270px;
   border-radius: 10px;
 }
 
@@ -36,11 +36,11 @@
     bottom: 100px;
   }
   .ProjectsSlider-container {
-    width: 260px;
+    width: 245px;
     left: calc(50% - 110px);
   }
   .ProjectsSlider img {
-    width: 260px;
+    width: 245px;
   }
 }
 
